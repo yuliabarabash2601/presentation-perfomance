@@ -1,0 +1,15 @@
+  0           0 RESUME                   0
+
+  1           2 LOAD_CONST               0 ('Hello')
+              4 STORE_NAME               0 (a)
+
+  2           6 LOAD_CONST               1 ('World')
+              8 STORE_NAME               1 (b)
+
+  3          10 LOAD_CONST               2 ('MSG: %s%s')
+             12 LOAD_NAME                0 (a)
+             14 LOAD_NAME                1 (b)
+             16 BUILD_TUPLE              2
+             18 BINARY_OP                6 (%)
+             22 STORE_NAME               2 (c)
+             24 RETURN_CONST             3 (None)

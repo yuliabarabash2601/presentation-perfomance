@@ -1,0 +1,16 @@
+  0           0 RESUME                   0
+
+  1           2 LOAD_CONST               0 ('Hello')
+              4 STORE_NAME               0 (a)
+
+  2           6 LOAD_CONST               1 ('World')
+              8 STORE_NAME               1 (b)
+
+  3          10 LOAD_CONST               2 ('MSG: ')
+             12 LOAD_NAME                0 (a)
+             14 FORMAT_VALUE             0
+             16 LOAD_NAME                1 (b)
+             18 FORMAT_VALUE             0
+             20 BUILD_STRING             3
+             22 STORE_NAME               2 (timestame_f)
+             24 RETURN_CONST             3 (None)
